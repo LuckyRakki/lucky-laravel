@@ -13,10 +13,11 @@
             <nav>
                 <ul class="flex space-x-4">
                     <li><a href="#home" class="hover:text-yellow-400">Utama</a></li>
-                    <li><a href="#about" class="hover:text-yellow-400">Tentang</a></li>
                     <li><a href="#features" class="hover:text-yellow-400">Fitur</a></li>
                     <li><a href="#explore" class="hover:text-yellow-400">Jelajah</a></li>
                     <li><a href="#contact" class="hover:text-yellow-400">Kontak</a></li>
+                    <a href="{{ route('login') }}" class="hover:text-yellow-400">Login</a>
+                    <a href="{{ route('about') }}" class="hover:text-yellow-400">About</a>
                 </ul>
             </nav>
         </div>
