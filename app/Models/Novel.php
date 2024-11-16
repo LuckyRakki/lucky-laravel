@@ -6,18 +6,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Mahasiswa extends Model
+class Novel extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'nim',
-        'name',
-        'jurusan_id'
+        'nama_novel',
+        'negara',
+        'genre_id'
     ];
 
-    public function jurusan(): BelongsTo
+    public function genre(): BelongsTo
     {
-        return $this->BelongsTo(Jurusan::class);
+        return $this->BelongsTo(Genre::class);
     }
 }

@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\JurusanResource\Pages;
-use App\Filament\Resources\JurusanResource\RelationManagers;
-use App\Models\Jurusan;
+use App\Filament\Resources\GenreResource\Pages;
+use App\Filament\Resources\GenreResource\RelationManagers;
+use App\Models\Genre;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,9 +13,9 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class JurusanResource extends Resource
+class GenreResource extends Resource
 {
-    protected static ?string $model = Jurusan::class;
+    protected static ?string $model = Genre::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -56,9 +56,9 @@ class JurusanResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListJurusans::route('/'),
-            'create' => Pages\CreateJurusan::route('/create'),
-            'edit' => Pages\EditJurusan::route('/{record}/edit'),
+            'index' => Pages\ListGenres::route('/'),
+            'create' => Pages\CreateGenre::route('/create'),
+            'edit' => Pages\EditGenre::route('/{record}/edit'),
         ];
     }
 }

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\JurusanResource\Pages;
+namespace App\Filament\Resources\GenreResource\Pages;
 
-use App\Filament\Resources\JurusanResource;
+use App\Filament\Resources\GenreResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditJurusan extends EditRecord
+class EditGenre extends EditRecord
 {
-    protected static string $resource = JurusanResource::class;
+    protected static string $resource = GenreResource::class;
 
     protected function getHeaderActions(): array
     {
